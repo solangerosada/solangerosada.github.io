@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 </head>
 <body>
     <h1>Hello World</h1>
+
+    <div class="input-group mb-3">
+      
+      <div class="input-group">
+        <input id= "input1" type="text" class="form-control" placeholder="Insira algum texto" aria-label="Recipient's username with two button addons">
+        <button class="btn btn-outline-secondary" type="button" onclick="enviar()">Enviar</button>
+      </div>
+    </div>
+    <br><br>
+    <br>   
+    <div class="card">
+        <div id= "div1" class="card-body">
+            <p  id = "lista" class="fw-normal">Carregar texto...</p>
+        </div>
+      </div>
+
+      <script>
+          function enviar(){
+
+              const texto = document.getElementById("input1").value;
+              let aux = document.getElementById("div1");
+              aux.innerHTML = texto; 
+             //console.log();
+          }
+      </script>
 </body>
 </html>
