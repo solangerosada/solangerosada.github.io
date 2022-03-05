@@ -17,8 +17,7 @@
         <button class="btn btn-outline-secondary" type="button" onclick="enviar()">Enviar</button>
       </div>
     </div>
-    <br><br>
-    <br>   
+    <br><br>   
     <div class="card">
         <div id= "div1" class="card-body">
             <p  id = "lista" class="fw-normal">Carregar texto...</p>
@@ -27,11 +26,10 @@
 
       <script>
           function enviar(){
-
               const texto = document.getElementById("input1").value;
               let aux = document.getElementById("div1");
               aux.innerHTML = texto; 
-             //console.log();
+             //console.log(texto);
           }
       </script>
 </body>
